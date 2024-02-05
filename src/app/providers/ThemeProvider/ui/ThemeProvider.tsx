@@ -1,6 +1,9 @@
 import { useMemo, useState } from "react";
 import { FC } from "react";
-import ThemeContext, { LOCAL_STORAGE_THEME_KEY, THEME } from "./ThemeContext";
+import ThemeContext, {
+  LOCAL_STORAGE_THEME_KEY,
+  THEME,
+} from "../lib/ThemeContext";
 
 type ProviderProps = {
   children: React.ReactNode;
