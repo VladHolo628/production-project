@@ -2,7 +2,7 @@ export type Modifiers = Record<string, boolean | string>;
 
 function classNames(
   cls: string,
-  modifiers: Modifiers,
+  modifiers?: Modifiers,
   additionalCls?: string[]
 ): string {
   return [
