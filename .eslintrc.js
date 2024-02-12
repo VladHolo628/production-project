@@ -12,6 +12,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
+    'plugin:i18next/recommended',
     'google',
 
   ],
@@ -36,6 +37,7 @@ module.exports = {
   'plugins': [
     '@typescript-eslint',
     'react',
+    'i18next',
   ],
   'rules': {
     'linebreak-style': 0,
