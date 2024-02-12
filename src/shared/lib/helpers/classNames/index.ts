@@ -1,17 +1,17 @@
 export type Modifiers = Record<string, boolean | string>;
 
 function classNames(
-  cls: string,
-  modifiers?: Modifiers,
-  additionalCls?: string[]
+    cls: string,
+    modifiers?: Modifiers,
+    additionalCls?: string[],
 ): string {
   return [
     cls,
     ...Object.entries(modifiers)
-      .filter(([className, value]) => Boolean(value))
-      .map(([className, value]) => className),
+        .filter(([, value]) => Boolean(value))
+        .map(([className, ,]) => className),
     ...additionalCls,
-  ].join(" ");
+  ].join(' ');
 }
 
 export default classNames;

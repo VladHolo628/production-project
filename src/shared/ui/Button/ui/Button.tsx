@@ -1,10 +1,10 @@
-import classNames from "@/shared/lib/helpers/classNames";
-import React from "react";
+import classNames from '@/shared/lib/helpers/classNames';
+import React from 'react';
 
-import cls from "./Button.module.scss";
+import cls from './Button.module.scss';
 
 export enum ButtonTheme {
-  CLEAR = "clear",
+  CLEAR = 'clear',
 }
 
 interface IButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
